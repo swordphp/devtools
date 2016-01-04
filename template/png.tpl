@@ -3,11 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tiny your Pngs.</title>
-    <link rel="stylesheet" href="static/css/normalize.css"/>
-    <link rel="stylesheet" href="static/css/font-awesome-4.4.0/css/font-awesome.css">
-    <link rel="stylesheet" href="static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/normalize.css"/>
+    <link rel="stylesheet" href="/static/css/font-awesome-4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/static/css/main.css"/>
 </head>
 <body>
+    <div id="topnav">
+        <ul>
+            <li><a href="#" >图片压缩</a></li>
+            <li><a href="#" >二维码生成</a></li>
+            <li><a href="#" >base64(en/de)code</a></li>
+            <li><a href="#" >json(en/de)code</a></li>
+            <li><a href="#" >url(en/de)code</a></li>
+            <li><a href="#" >str->md5</a></li>
+            <li><a href="#" >模拟请求</a></li>
+            <li><a href="#" >时间戳转换</a></li>
+            <li><a href="#" >短网址生成</a></li>
+            <li><a href="#" >OPENapi生成</a></li>
+            <li><a href="#" >...</a></li>
+            <li><a href="#" >...</a></li>
+        </ul>
+    </div>
     <input id="file" type="file" accept="image/png" multiple hidden>
     <div class="title">
         <h3>
@@ -105,8 +121,8 @@
             </div>
         </li>
     </script>
-    <script src="static/js/jquery-2.1.4.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/jquery-2.1.4.js"></script>
+    <script src="/static/js/main.js"></script>
     <script>
         Array.prototype.forEach.call(document.querySelectorAll(".compare .img-wrapper"),function(e, i){
             e.addEventListener("scroll", function(e){

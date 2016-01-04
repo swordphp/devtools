@@ -1,7 +1,7 @@
 <?php
 include(WEB_ROOT.'common/smarty/Smarty.class.php');
 class base_ctrl{
-    public static $tpl;
+    public $tpl;
     public function __construct(){
         $this->tpl = new Smarty();
         $smarty_config = include(WEB_ROOT."configs/smarty.config.php");

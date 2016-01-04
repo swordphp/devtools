@@ -11,7 +11,7 @@ class image_ctrl extends base_ctrl{
         $this->res = new resobjobj();
     }
     public function init($input){
-        $this->tpl->display("index.tpl");
+        $this->tpl->display("png.tpl");
     }
     /**
      * 上传图片的方法

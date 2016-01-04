@@ -7,6 +7,7 @@
 define("WEB_ROOT",dirname(__FILE__)."/");//定义根目录
 define("LIB_DIR",WEB_ROOT."library/");
 define("HOST_NAME","http://".$_SERVER['HTTP_HOST']);
+date_default_timezone_set("Asia/chongqing");
 include_once(WEB_ROOT.'library/base_ctrl.class.php');//包含基础控制器
 
 include_once(WEB_ROOT.'library/func.lib.php');//包含函数库
@@ -49,7 +50,7 @@ final  class Index {
      * @param  [str] $ctrl 控制器名称字符串
      * @return [type]       [description]
      */
-    private  function includectrl($ctrl){
+    private static  function includectrl($ctrl){
         $class_name = $ctrl."_ctrl";
         $filename = WEB_ROOT."ctrl/$class_name.class.php";
         include($filename);
